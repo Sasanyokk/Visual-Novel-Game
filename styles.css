@@ -1,0 +1,133 @@
+body{
+	margin:0;
+	padding:0;
+	position: relative;
+	overflow:hidden;
+}
+#textbox{
+	width:80%;
+	height:25%;
+	background-image: url("../assets/images/textbox.png");
+	bottom:0%;
+	cursor:pointer;
+	font-size:2.5vw;
+}
+#text{
+	margin:2%;
+	width:96%;
+	word-wrap: break-word;
+}
+#textshadow{
+	bottom:25%;
+	height:3%;
+	width:100%;
+	background-image: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+	opacity:0.5;
+}
+#eyecatcher_left{
+	width:8%;
+	right:0%;
+	background-image: url("../assets/images/wall.png");
+	transform: scaleX(-1);
+	padding:1px;
+}
+#eyecatcher_left_side{
+	width:2%;
+	right:8%;
+	background-image: url("../assets/images/side_wall.png");
+}
+#eyecatcher_left_shadow{
+	width:3%;
+	right:10%;
+	background-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+	opacity:0.75;
+}
+#eyecatcher_right{
+	width:8%;
+	left:0%;
+	background-image: url("../assets/images/wall.png");
+}
+#eyecatcher_right_side{
+	width:2%;
+	left:8%;
+	background-image: url("../assets/images/side_wall.png");
+}
+#eyecatcher_right_shadow{
+	width:3%;
+	left:10%;
+	background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+	opacity:0.75;
+}
+#red_button{
+	width:5%;
+	height:5%;
+	background-color:red;
+	top:0%;
+}
+#green_button{
+	width:5%;
+	height:5%;
+	background-color:green;
+	bottom:0%;
+}
+#bg_container{
+	z-index:0;
+	width:80%;
+	right:10%;
+}
+#actor_one, #actor_two{
+	bottom:0%;
+	top:0%;
+	left:50%;
+	right:50%;
+	transform: translate(-50%, 0%);
+	height:90%;
+	z-index:1;
+	visibility:hidden;
+}
+#textbox{
+	z-index:2;
+	left:10%;
+}
+#dawn{
+	z-index:4;
+	right:100%;
+	width:100%;
+}
+#dusk{
+	z-index:5;
+	right:50%;
+	width:40%;
+	bottom:40%;
+	font-family:LoadScreen;
+	text-align:center;
+	font-size:5vw;
+}
+#eyecatcher_left, #eyecatcher_right, #eyecatcher_left_side, #eyecatcher_right_side{
+	z-index:6;
+}
+#eyecatcher_left_shadow, #eyecatcher_right_shadow{
+	z-index:7;
+}
+div, img{
+	position:absolute;
+}
+#eyecatcher_right, #eyecatcher_left, #dawn, #bg_container, #eyecatcher_left_side, #eyecatcher_right_side, #eyecatcher_left_shadow, #eyecatcher_right_shadow, #text {
+	height:100%;
+}
+@font-face {
+  font-family:LoadScreen;
+  src: url(../assets/fonts/Madjex.ttf);
+}
+@font-face {
+  font-family:Her;
+  src: url(../assets/fonts/PWStraight.ttf);
+}
+@font-face {
+  font-family:His;
+  src: url(../assets/fonts/Typewriter.ttf);
+}
+@font-face {
+  font-family:Mine;
+  src: url(../assets/fonts/Lemon_Sun.otf);
+}
